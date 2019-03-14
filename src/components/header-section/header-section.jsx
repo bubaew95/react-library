@@ -10,7 +10,7 @@ export default class HeaderSection extends Component {
             <div className="row">
               <div className="col-lg-2 text-center text-lg-left">
                 <a href="/" className="site-logo">
-                  <img src="/img/logo.png" alt="" />
+                  <img src="/img/logo.jpg" alt="" />
                 </a>
               </div>
               <div className="col-xl-6 col-lg-5">
