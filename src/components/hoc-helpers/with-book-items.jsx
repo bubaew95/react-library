@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Spinner from '../spinner'
+import ErrorBoundry from '../error-boundry'
 
 const withBookItems = View => {
   return class extends Component {
@@ -18,9 +19,7 @@ const withBookItems = View => {
       }
     }
 
-    onItemClick = id => {
-      console.log('id_book', id)
-    }
+    onItemClick = id => {}
 
     render() {
       const { isLoad, items } = this.props
@@ -28,7 +27,9 @@ const withBookItems = View => {
         return <Spinner />
       }
       return (
-        <View {...this.props} items={items} onItemClick={this.onItemClick} />
+        <ErrorBoundry>
+          <View {...this.props} items={items} onItemClick={this.onItemClick} />
+        </ErrorBoundry>
       )
     }
   }

@@ -8,6 +8,9 @@ import BannerSection from '../../components/banner-section'
 import BookList from '../../components/nb-component/item-lists'
 
 class HomePage extends Component {
+  componentDidMount() {
+    document.title = 'Главная страница'
+  }
   render() {
     return (
       <React.Fragment>
