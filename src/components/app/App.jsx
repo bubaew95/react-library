@@ -11,7 +11,7 @@ import HeaderSection from '../header-section'
 import FooterSection from '../footer-section'
 import BookViewPage from '../../pages/book-view-page'
 import BooksCategory from '../../pages/books-category'
-
+import pageRouters from '../../extends/routers'
 class App extends Component {
   render() {
     return (
@@ -21,14 +21,16 @@ class App extends Component {
 
         <Routers history={history}>
           <Switch>
-            <Route exact path="/" component={HomePage} />
-
-            <Route path="/books">
-              <Route path="/books" exact component={BooksPage} />
-              <Route path="/books/view/:id" component={HomePage} />
-              <Route path="/books/:alias/:id" component={BooksPage} />
-            </Route>
-
+            {pageRouters.map((prop, key) => {
+              return (
+                <Route
+                  exact={prop.exact}
+                  key={key}
+                  path={prop.path}
+                  component={prop.component}
+                />
+              )
+            })}
             <Route component={ErrorPage} />
           </Switch>
         </Routers>

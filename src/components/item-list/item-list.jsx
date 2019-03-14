@@ -7,8 +7,8 @@ import ErrorBoundry from '../error-boundry'
 const ItemList = ({ items, col, onItemClick }) => {
   const rendItem = items.map(item => {
     return (
-      <ErrorBoundry grid={col}>
-        <div key={item.id} className={col}>
+      <ErrorBoundry key={item.id} grid={col}>
+        <div className={col}>
           <div className="product-item">
             <div className="pi-pic">
               <img
