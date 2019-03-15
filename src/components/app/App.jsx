@@ -1,16 +1,11 @@
 import React, { Component } from 'react'
-import HomePage from '../../pages/home-page'
 import ErrorPage from '../../pages/error-page'
-import BooksPage from '../../pages/books-page'
 import { connect } from 'react-redux'
 import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom'
 import { history } from '../../extends/state'
-
 import Preloader from '../preloader'
 import HeaderSection from '../header-section'
 import FooterSection from '../footer-section'
-import BookViewPage from '../../pages/book-view-page'
-import BooksCategory from '../../pages/books-category'
 import pageRouters from '../../extends/routers'
 class App extends Component {
   render() {

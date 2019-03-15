@@ -1,5 +1,5 @@
 export class NebService {
-  _HOST = ''
+  _HOST = 'http://beta.neb-chr.ru/'
 
   /**
    * api service
