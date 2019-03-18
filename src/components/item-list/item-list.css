@@ -6,3 +6,10 @@
     border-radius: 3px;
     overflow: hidden;
 }
+.pi-pic {
+    max-width: 264px;
+    min-height: 200px;
+}
+.pi-pic img {
+    width: 264px;
+}

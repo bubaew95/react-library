@@ -7,16 +7,11 @@ import ErrorBoundry from '../error-boundry'
 const ItemList = ({ items, col, onItemClick }) => {
   const rendItem = items.map(item => {
     return (
-      <ErrorBoundry key={item.id} grid={col}>
+      <ErrorBoundry key={item.id} grid={`${col} col-sm-2`}>
         <div className={col}>
           <div className="product-item">
             <div className="pi-pic">
-              <img
-                src={`http://neb-chr.ru${item.image}`}
-                alt=""
-                width="264"
-                height="370"
-              />
+              <img src={`http://neb-chr.ru${item.image}`} alt="" />
               <div className="pi-links">
                 <ErrorButton />
                 <Link

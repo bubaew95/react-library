@@ -11,7 +11,7 @@ const LetestProductSection = ({ items }) => {
         <div className="row">
           <ItemList
             items={items}
-            col="col-lg-3 col-sm-6"
+            col="col-lg-3 col-sm-3"
             onItemClick={() => {}}
           />
         </div>
