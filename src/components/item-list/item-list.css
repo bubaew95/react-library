@@ -4,7 +4,16 @@
     border-radius: 3px;
     overflow: hidden;
 }
+<<<<<<< HEAD
 .product-item .pi-text {
     padding: 10px;
     height: 85px;
+=======
+.pi-pic {
+    max-width: 264px;
+    min-height: 200px;
+}
+.pi-pic img {
+    width: 264px;
+>>>>>>> c19a11f301dbb17a20c1449500b0788356ff875b
 }
