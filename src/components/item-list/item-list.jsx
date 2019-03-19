@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './item-list.css'
 import ErrorButton from '../error-button'
 import ErrorBoundry from '../error-boundry'
+import { HOST } from '../../extends/constants'
 
 const ItemList = ({ items, col, onItemClick }) => {
   const rendItem = items.map(item => {
@@ -11,7 +12,7 @@ const ItemList = ({ items, col, onItemClick }) => {
         <div className={col}>
           <div className="product-item">
             <div className="pi-pic">
-              <img src={`http://neb-chr.ru${item.image}`} alt="" />
+              <img src={`${HOST}${item.image}`} alt="" />
               <div className="pi-links">
                 <ErrorButton />
                 <Link

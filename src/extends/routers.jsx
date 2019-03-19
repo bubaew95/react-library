@@ -20,6 +20,12 @@ const pageRouters = [
     exact: false,
     component: BooksPage,
   },
+  {
+    name: 'Пользователи',
+    path: 'user',
+    exact: true,
+    component: null,
+  },
 ]
 
 export default pageRouters
