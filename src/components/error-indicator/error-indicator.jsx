@@ -1,8 +1,9 @@
 import React from 'react'
 import './error-indicator.css'
-const ErrorIndicator = ({ grid }) => {
+const ErrorIndicator = ({ grid, message }) => {
   return (
     <div className={grid}>
+      {message && <h3 className="text-center">{message}</h3>}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
         <title>404</title>
         <g id="Layer_12 yellow-back-fig" data-name="Layer 12">
