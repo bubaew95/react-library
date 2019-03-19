@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Spinner from '../spinner'
 import ErrorBoundry from '../error-boundry'
 import Pagination from 'react-js-pagination'
-import NotItems from '../not-items'
 import ErrorIndicator from '../error-indicator/error-indicator'
 
 const withBookItems = View => {
